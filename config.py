@@ -1,12 +1,10 @@
 import os
 import json
+from borg import *
 
-class Config():
-    __borg = {}
-
+class Config(Borg):
     def __init__(self):
-        self.__dict__ = self.__borg
-
+        Borg.__init__(self)
         if not hasattr(self, "_config"):
             if os.path.isfile("config.json"):
                 # read config
