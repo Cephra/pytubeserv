@@ -69,7 +69,7 @@ var onYouTubeIframeAPIReady;
           $("#next").text("empty playlist");
         }
       });
-    }, 1500);
+    }, 2000);
     apiKey = prompt("Please enter the API key.", "");
   };
 }());
